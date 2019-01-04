@@ -154,6 +154,32 @@
                     Page</a></p>
         </div>
     </footer>
+
+    <script>
+    
+    //On click, validate it, and capture input
+    $("#submit").on("click", () => {
+        function validateForm() {
+            let isValid = true;
+            $(".form-control").each(() => {
+                if ($(this).val() === "") {
+                    isValid = false;
+                }
+            });
+
+            // $(".chosen-select").each(() => {
+            //     if ($(this).val() === "") {
+            //         isValid = false;
+            //     }
+            // });
+            return isValid;
+        }
+    });
+
+    //collect data into an object
+    
+
+    </script>
 </body>
 
 </html>
